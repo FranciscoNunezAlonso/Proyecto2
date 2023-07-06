@@ -1,0 +1,18 @@
+.d-block{
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    color: aliceblue;
+}
+
+.descripcionDeMontana{
+    color: black;
+    background-color: aliceblue;
+}
+
+.ruta{
+    width: auto;
+    height: 750px;
+}
