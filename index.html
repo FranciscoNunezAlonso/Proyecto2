@@ -6,6 +6,24 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="/PROYECTO2/css/style.css">
+    <style>
+      .borde{
+        border: 1px black double;
+        text-align: center;
+      }
+      .color1{
+        background-color: coral;
+      }
+      .color2{
+        background-color: cornflowerblue;
+      }
+      .color3{
+        background-color: cornsilk;
+      }
+      .color4{
+        background-color: crimson;
+      }
+    </style>
   </head>
   <body class="bg-img bg-cover" style="background-image: url('https://wallpaperaccess.com/full/825191.jpg'); height:100%; width:100%; background-size: cover;">
   
@@ -88,8 +106,95 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    
+      <br>
+      <!-- acordeon -->
+      <section>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Selecciona tu ruta
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Define cuál de las rutas que están disponibles te interesa.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Selecciona una fecha
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Revisa en calendario y corrobora si hay un guía disponible para la fecha que deseas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Agenda tu ruta
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Ya que definiste la ruta y la fecha que deseas realizarla reserva la fecha y continua con el proceso de contratación de guía.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
+      <br>
+
+      <!-- <body>
+        <div class="container borde"> 
+          <div class="row borde">
+              <div class="borde color3 col-sm-12">Header</div>
+        </div>
+          <div class="row borde">
+            <div class="borde color1 col-sm-4">Izquierdo</div>
+            <div class="borde color2 col-sm-4">Centro</div>
+            <div class="borde color3 col-sm-4">Derecho</div>
+          </div>
+              
+          <div class="row">
+            <div class="borde text-bg-success p-3 col-sm-12">Footer</div>
+          </div>
+        </div>
+              
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      </body> -->
+
+    <!--Alerta-->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      ¡Parece que no hay fechas disponibles de esta ruta!
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">¡AY! Parece que tenemos un problema :C</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              Página bajo construcción.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>

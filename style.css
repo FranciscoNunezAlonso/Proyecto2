@@ -16,3 +16,18 @@
     width: auto;
     height: 750px;
 }
+
+@media (min-width: 576px) {
+    .carousel{
+        height: auto;
+        width: 600px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .carousel{
+        height: 500px;
+        width: 1000px;
+    }
+
+}
